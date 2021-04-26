@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="My first project.css">
+
+    <script src=“My_first_projct.js”></script>
+    
+      
+    
+      
+      
+       
+    
+   
+    <title>Quiz Game</title>
+</head>
+
+
+<body style=" font-family: Arial, Helvetica, sans-serif; background-image: url(manga.jpg); background-size:inherit;"  >
+  <p style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 30px;"> Count down <span id="countdowntimer">15 </span> </p>
+  <script> 
+
+var timeleft = 15;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(window.location.href = "file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%206.html");
+    },1000);
+
+const trueAnswer = "true"
+const falseAnswer = "false"
+function myFunction() {
+  if ( trueAnswer === "true") {
+    document.getElementById("true").style.color = "green";
+   } else if( falseAnswer === "false"){
+      document.getElementById("false").style.color = "red";
+    }
+
+    
+  };
+
+
+  </script>
+
+  <div  >  <center> <h1 style="color: #4CAF50; margin-bottom: 50px; padding: 30px;"  >Quiz is start</h1></center></div>
+
+  <center>
+<h1 id="Q5" style="color: rgb(5, 1, 1) ;"><mark> Questions 5</mark></h1>
+<p id="q5" style="color: rgb(247, 240, 240) ; font-size: 25px; "><mark> Whats are called Japanese graphic novels?</mark></p>
+  <table >
+<tr><td><td><button class="false" style="background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer; "onclick="myFunction()">
+          Manha<button style="margin-left: 10px; background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;" class="false" onclick="myFunction()">Comic</button></button></td></td></tr>
+
+<tr><td><td>
+  <button class="false" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;" onclick="myFunction()" >Manho<button style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;" id="true" onclick="myFunction()">Manga</button></button></td></td></tr>
+
+</center>
+<div><button type="button" style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: whitesmoke;"onclick="location.href='file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%202.html'">Next</button></div>

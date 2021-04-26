@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head  >
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="My first project.css">
+
+    <script src=“My_first_projct.js”></script>
+    
+      
+        
+      
+    
+        
+    
+      
+      
+       
+    
+   
+    <title>Quiz Game</title>
+</head>
+
+
+<body style=" font-family: Arial, Helvetica, sans-serif; background-size: cover; ; background-image: url(hight2.webp); "  >
+  <p style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;"> Count down <span id="countdowntimer"> 15 </span> </p>;
+  
+  <script> 
+
+var timeleft = 15;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(window.location.href = "file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%202.html");
+    },1000);
+  
+    const trueAnswer = "true"
+    const falseAnswer = "false"
+
+    function myFunction() {
+      if ( trueAnswer === "true") {
+        document.getElementById("true").style.color = "green";
+       } 
+       
+
+        
+      };
+  
+
+    
+  
+  
+  
+  </script>
+
+  <div class="Questions" >  <center> <h1 style="color: #4CAF50; margin-bottom: 30px; padding: 30px;"  >Quiz is start</h1></center></div>
+
+  <center>
+<h2 id="Q1" style="color: white;">Questions 1</h2>
+<p id="q1" style="color:white">What is the tallest tower in the world ?</p>
+  <table >
+<tr><td><td><button type="button" id="true" style="background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 100px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;" onclick="myFunction()">
+          Burj Khalifa<button type="button" style="margin-left: 10px; background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 80px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;" class="false"onclick="myFunction()">Shanghai Tower</button></button></td></td></tr>
+
+<tr><td><td>
+  <button type="button" class="false" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 31px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;"onclick="myFunction()">Makkah Royal Clock Tower<button type="button" style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 45px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;" class="false "onclick="myFunction()">Ping An Finance Center</button></button></td></td></tr>
+
+</center>;
+<div><button type="button" style="margin-left: 10px; background-color: #4CAF50;
+border: none;
+color: white;
+padding: 10px 25px;
+border-radius: 12px;
+display: inline-block;
+font-size: 20px;
+margin: 20px;
+cursor: pointer;
+box-shadow: whitesmoke;"onclick="location.href='file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%202.html'">Next</button></div>

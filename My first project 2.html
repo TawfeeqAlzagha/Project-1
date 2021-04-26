@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="My first project.css">
+
+    <script src=“My_first_projct.js”></script>
+    
+      
+    
+      
+      
+       
+    
+   
+    <title>Quiz Game</title>
+</head>
+
+
+<body style=" font-family: Arial, Helvetica, sans-serif; background-image: url(biglion.jpg); background-size: cover;"  >
+  <p style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;"> Count down <span id="countdowntimer">15 </span> </p>
+  <script> 
+
+var timeleft = 15;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(window.location.href = "file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%203.html");
+    },1000);
+
+const trueAnswer = "true"
+
+    function myFunction() {
+      if ( trueAnswer === "true") {
+        document.getElementById("true").style.color = "green";
+       } else if( trueAnswer === "false"){
+          document.getElementsByClassName("false").style.color = "red";
+        }
+
+        
+      };
+
+
+  </script>
+
+  <div  >  <center> <h1 style="color: #4CAF50; margin-bottom: 30px; padding: 30px;"  >Quiz is start</h1></center></div>
+
+  <center>
+<h2 id="Q2" style="color: white;">Questions 2</h2>
+<p id="q2" style="color: white;">what is the name of lion baby</p>
+  <table >
+<tr><td><td><button id="false" style="background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 37px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;" onclick="myFunction()">
+          kitten<button style="margin-left: 10px; background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 40px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;" id="true" onclick="myFunction()">cub</button></button></td></td></tr>
+
+<tr><td><td>
+  <button id="false" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 45px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;" onclick="myFunction()">calf<button style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;" id="false" onclick="myFunction()">joeys</button></button></td></td></tr>
+
+</center>
+<div><button type="button" style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  ;"onclick="location.href='file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%203.html'">Next</button></div>

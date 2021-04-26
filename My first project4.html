@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="My first project.css">
+
+    <script src=“My_first_projct.js”></script>
+    
+      
+    
+      
+      
+       
+    
+   
+    <title>Quiz Game</title>
+</head>
+
+
+<body style=" font-family: Arial, Helvetica, sans-serif; background-image: url(plants2.jpg); background-size: cover;"  >
+  <p style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;"> Count down <span id="countdowntimer">15 </span> </p>
+  <script> 
+
+var timeleft = 15;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(window.location.href = "file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%205.html");
+    },1000);
+
+const trueAnswer = "true"
+const falseAnswer = "false"
+function myFunction() {
+  if ( trueAnswer === "true") {
+    document.getElementById("true").style.color = "green";
+   } else if( falseAnswer === "false"){
+      document.getElementById("false").style.color = "red";
+    }
+
+    
+  };
+
+
+  </script>
+
+  <div  >  <center> <h1 style="color: #4CAF50; margin-bottom: 30px; padding: 30px;"  >Quiz is start</h1></center></div>
+
+  <center>
+<p id="Q4" style="color: white; ">Questions 4</p>
+<p id="q4" style="color: white; font-size: 25px;">How many planets outside the solar system ?</p>
+  <table >
+<tr><td><td><button id="false" style="background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;"  onclick="myFunction()" onclick.window.location.href = "file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%205.html">
+          4000 Plants<button style="margin-left: 10px; background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          border-radius: 12px;
+          display: inline-block;
+          font-size: 20px;
+          margin: 20px;
+          cursor: pointer;" id="false"  onclick="myFunction()">4100 Plants</button></button></td></td></tr>
+
+<tr><td><td>
+  <button id="true" style="background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;"  onclick="myFunction()"> 4160 Plants <button style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  display: inline-block; 
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;" class="fulse"  onclick="myFunction()">3160 Plants</button></button></td></td></tr>
+
+</center>
+<div><button type="button" style="margin-left: 10px; background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: whitesmoke;"onclick="location.href='file:///D:/MERAKI_AKADEMY/Materials/Materials/W04L05/My%20first%20project%205.html'">Next</button></div>
